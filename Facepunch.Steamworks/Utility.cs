@@ -93,7 +93,6 @@ namespace Facepunch.Steamworks
             }
 
             return Encoding.UTF8.GetString( buffer, 0, i );
-        }
-        
+        }    
     }
 }
