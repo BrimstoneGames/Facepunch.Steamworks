@@ -32,7 +32,7 @@ namespace Facepunch.Steamworks
             }
 
             IsUnity = true;
-            UseThisCall = SteamNative.Platform.Os == OperatingSystem.Windows;
+            UseThisCall = true;
 
             Console.WriteLine( "Facepunch.Steamworks Unity: " + platform );
             Console.WriteLine( "Facepunch.Steamworks Os: " + SteamNative.Platform.Os );
