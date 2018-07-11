@@ -5,13 +5,15 @@ using System.Text;
 
 namespace Facepunch.Steamworks
 {
-    public class Stats : IDisposable
+    public partial class Stats : IDisposable
     {
         internal Client client;
+        public PlayerCount CurrentPlayerCount { get; private set; }
 
         internal Stats( Client c )
         {
             client = c;
+            CurrentPlayerCount = new PlayerCount(c);
         }
 
 		public bool StoreStats()
