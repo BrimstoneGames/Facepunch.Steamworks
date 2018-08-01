@@ -63,6 +63,7 @@ namespace Facepunch.Steamworks
         public User User { get; private set; }
         public RemoteStorage RemoteStorage { get; private set; }
         public Utils Utils { get; private set; }
+        public Input Input { get; private set; }
 
         public Client( uint appId ) : base( appId )
         {
@@ -109,6 +110,7 @@ namespace Facepunch.Steamworks
             User = new User( this );
             RemoteStorage = new RemoteStorage( this );
             Utils = new Utils(this);
+            Input = new Input(this);
 
             Workshop.friends = Friends;
 
